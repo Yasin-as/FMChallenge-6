@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+    --Darkgrayishblue: hsl(227, 10%, 46%);
+    --Darkgray: hsl(0, 0%, 59%);
+    --FontSize: 18px;
+    --FontFamily: 'Kumbh Sans', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main{
+    background-color: var(--Darkcyan);
+    width: 100%;
+    height: 100vh;
+    font-family: var(--FontFamily);
+}
+.card-container{
+    width: 20rem;
+    height: 50vh;
+    border-radius: 14px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+.card-top{
+    background: url("/profile-card-component-main/images/bg-pattern-card.svg");
+    width: 100%;
+    height: 14vh;
+    border-radius: 14px 14px 0 0;
+}
+.card-mid{
+    width: 50%;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-top: -80px;
+}
+.card-mid img{
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.card-bottom{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -20px;
+}
+.card-bottom span,p{
+    color: var(--Darkgray);
+}
+
+#breakline{
+    width: 100%;
+    height: 1px;
+    margin-top: 15px;
+    background-color:hsla(0, 0%, 59%, 0.308) ;
+}
+.card-footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.card-footer h5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.card-footer h5 span{
+    font-size: 0.8rem;
+    color: var(--Darkgray);
+}
+
